@@ -382,7 +382,7 @@ format-prefix = "NWS "
 format = <label>
 exec = ~/.config/unread-news.sh
 format-underline = #0040a8
-click-left = newsboat
+;click-left = i3-sensible-terminal newsboat
 click-middle = newsboat -x reload
 
 [module/ewmh]
