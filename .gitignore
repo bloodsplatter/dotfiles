@@ -1,1 +1,3 @@
 .vscode/launch.json
+pulse/*-default-sink
+pulse/*-default-source
