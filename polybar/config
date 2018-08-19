@@ -373,13 +373,11 @@ format-underline = #1db954
 
 [module/newsboat]
 type = custom/script
-interval = 300
+interval = 60
 format-prefix = "NWS "
 format = <label>
 exec = ~/.config/unread-news.sh
 format-underline = #0040a8
-;click-left = i3-sensible-terminal newsboat
-click-middle = newsboat -x reload
 
 [module/ewmh]
 type = internal/xworkspaces

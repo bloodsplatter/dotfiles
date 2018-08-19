@@ -35,6 +35,9 @@ bindsym $mod+Return exec i3-sensible-terminal
 # kill focused window
 bindsym $mod+Shift+q kill
 
+# lock the pc
+bindsym $mod+l exec --no-startup-id i3lock
+
 # start dmenu (a program launcher)
 bindsym $mod+space exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
@@ -43,10 +46,10 @@ bindsym $mod+space exec dmenu_run
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+m focus right
+#bindsym $mod+j focus left
+#bindsym $mod+k focus down
+#bindsym $mod+l focus up
+#bindsym $mod+m focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -170,8 +173,8 @@ exec_always --no-startup-id ~/.config/startup.sh
 #i3-gaps
 for_window [class="^.*"] border pixel 0
 # smart_gaps on
-gaps inner 15
-gaps outer 0
+gaps inner 10
+gaps outer 5
 
 #printscreen
 #to clipboard
