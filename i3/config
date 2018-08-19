@@ -178,7 +178,7 @@ gaps outer 5
 
 #printscreen
 #to clipboard
-bindsym $mod+Print exec --no-startup-id ~/scripts/scrotclip.sh
+bindsym $mod+Print exec scrot ~/screenshots/screen.png
 
 #musicplayer
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause

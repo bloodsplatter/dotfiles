@@ -377,6 +377,7 @@ interval = 60
 format-prefix = "NWS "
 format = <label>
 exec = ~/.config/unread-news.sh
+click-left = i3-sensible-terminal -e '/usr/bin/newsboat'
 format-underline = #0040a8
 
 [module/ewmh]
