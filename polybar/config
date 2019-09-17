@@ -29,7 +29,7 @@ alert = #bd2c40
 
 [bar/top]
 override-redirect = false
-monitor = ${env:MONITOR:DVI-D-1}
+monitor = ${env:MONITOR:DVI-D-0}
 width = 100%
 height = 27
 ;offset-x = 1%
@@ -58,7 +58,7 @@ font-0 = FiraCode-Retina:fontformat=truetype:size=12:antialias=true;3
 font-2 = siji:pixelsize=10;1
 
 modules-left = ewmh
-modules-center = 
+modules-center = xwindow
 modules-right = 
 
 tray-position = right
@@ -67,15 +67,15 @@ tray-padding = 2
 ;tray-background = #0063ff
 
 ;wm-restack = bspwm
-;wm-restack = i3
+wm-restack = i3
 
 ;override-redirect = true
 
 ;scroll-up = bspwm-desknext
 ;scroll-down = bspwm-deskprev
 
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -83,7 +83,7 @@ cursor-scroll = ns-resize
 [bar/bottom]
 override-redirect = false
 bottom = true
-monitor = ${env:MONITOR:DVI-D-1}
+monitor = ${env:MONITOR:DVI-D-0}
 width = 100%
 height = 27
 ;offset-x = 1%
@@ -112,7 +112,7 @@ font-0 = fixed:pixelsize=10;1
 font-1 = FiraCode-Retina:fontformat=truetype:size=12:antialias=true;3
 font-2 = siji:pixelsize=10;1
 
-modules-left = newsboat spotify
+modules-left = xkeyboard 
 modules-center = memory cpu cpufreq temperature
 modules-right = volume  date 
 

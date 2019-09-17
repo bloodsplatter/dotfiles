@@ -39,7 +39,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+l exec --no-startup-id i3lock
 
 # start dmenu (a program launcher)
-bindsym $mod+space exec dmenu_run
+bindsym $mod+space exec rofi -show drun -show-icons 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -167,7 +167,6 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 #user startup scripts
-exec_always --no-startup-id ~/.config/start-polybar.sh
 exec_always --no-startup-id ~/.config/startup.sh
 
 #i3-gaps
@@ -175,6 +174,10 @@ for_window [class="^.*"] border pixel 0
 # smart_gaps on
 gaps inner 10
 gaps outer 5
+#corners triangular 10
+
+#for_window [window_role="pop-up"] floating enable
+#for_windows [title="Popup window"] floating enable
 
 #printscreen
 #to clipboard
@@ -184,6 +187,8 @@ bindsym $mod+Print exec scrot ~/screenshots/screen.png
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
 bindsym XF86AudioNext exec --no-startup-id playerctl next
 bindsym XF86AudioPrev exec --no-startup-id playerctl previous
+bindsym XF86AudioIncreaseVolume exec --no-startup-id ponymix increase 5
+bindsym XF86AudioDecreaseVolume exec --no-startup-id ponymix decrease 5
 
 # Make the currently focused window a scratchpad
 bindsym $mod+Shift+s  exec --no-startup-id "xdpyinfo | grep focus | cut -d ' ' -f 4 | cut -d, -f 1 > ~/.stickidtmp"
