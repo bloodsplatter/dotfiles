@@ -1,4 +1,4 @@
 [profiles]
 [[default]]
-font = "Fira Code Retina" 11
+font = Fira Code Retina 11
 hide_tabbar = true
