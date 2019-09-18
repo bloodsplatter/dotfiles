@@ -29,7 +29,7 @@ alert = #bd2c40
 
 [bar/top]
 override-redirect = false
-monitor = ${env:MONITOR:DVI-D-0}
+;monitor = ${env:MONITOR:fallback-value}
 width = 100%
 height = 27
 ;offset-x = 1%
@@ -83,7 +83,7 @@ cursor-scroll = ns-resize
 [bar/bottom]
 override-redirect = false
 bottom = true
-monitor = ${env:MONITOR:DVI-D-0}
+;monitor = ${env:MONITOR:DVI-D-1}
 width = 100%
 height = 27
 ;offset-x = 1%
