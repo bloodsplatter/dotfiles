@@ -1,1 +1,1 @@
-export $TERMINAL=/usr/bin/terminator
+export TERMINAL="/usr/bin/cool-retro-term"

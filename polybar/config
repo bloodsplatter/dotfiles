@@ -59,7 +59,7 @@ font-2 = siji:pixelsize=10;1
 
 modules-left = ewmh
 modules-center = xwindow
-modules-right = 
+modules-right = powermenu 
 
 tray-position = right
 tray-padding = 2
