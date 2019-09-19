@@ -34,7 +34,7 @@ width = 100%
 height = 27
 ;offset-x = 1%
 ;offset-y = 1%
-radius = 6.0
+radius = 5
 fixed-center = false
 
 background = ${colors.background}
@@ -66,16 +66,16 @@ tray-padding = 2
 ;tray-transparent = true
 ;tray-background = #0063ff
 
-;wm-restack = bspwm
-wm-restack = i3
+wm-restack = bspwm
+;wm-restack = i3
 
 ;override-redirect = true
 
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
+scroll-up = bspwm-desknext
+scroll-down = bspwm-deskprev
 
-scroll-up = i3wm-wsnext
-scroll-down = i3wm-wsprev
+;scroll-up = i3wm-wsnext
+;scroll-down = i3wm-wsprev
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -88,7 +88,7 @@ width = 100%
 height = 27
 ;offset-x = 1%
 ;offset-y = 100%
-radius = 0
+radius = 5
 fixed-center = true
 background-transparent = true
 background = ${colors.background}
@@ -112,7 +112,7 @@ font-0 = fixed:pixelsize=10;1
 font-1 = FiraCode-Retina:fontformat=truetype:size=12:antialias=true;3
 font-2 = siji:pixelsize=10;1
 
-modules-left = xkeyboard 
+modules-left = eth xkeyboard 
 modules-center = memory cpu cpufreq temperature
 modules-right = volume  date 
 
@@ -262,7 +262,7 @@ date-alt = "%Y-%m-%d"
 time = %H:%M
 time-alt = %H:%M:%S
 
-format-prefix = 
+format-prefix =
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #0a6cf5
 
