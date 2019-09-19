@@ -6,7 +6,8 @@ feh --randomize --bg-fill ~/Images/Wallpapers/* &
 twmnd &
 
 # composer
-compton --backend glx --vsync & >/dev/null
+killall -q compton
+compton -i 1.0 --blur-method kawase --blur-strength 10 -b -C --backend glx
 
 # kill current polybars
 killall -q polybar
