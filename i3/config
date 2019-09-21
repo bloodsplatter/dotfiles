@@ -36,7 +36,7 @@ bindsym $mod+Return exec /usr/bin/cool-retro-term --profile Adjusted-Futuristic
 bindsym $mod+Shift+q kill
 
 # lock the pc
-bindsym $mod+l exec --no-startup-id i3lock
+bindsym $mod+l exec --no-startup-id /usr/bin/i3lock-fancy
 
 # start dmenu (a program launcher)
 bindsym $mod+space exec rofi -show drun -show-icons 
