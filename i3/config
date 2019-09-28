@@ -189,8 +189,8 @@ bindsym $mod+Print exec flameshot gui
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
 bindsym XF86AudioNext exec --no-startup-id playerctl next
 bindsym XF86AudioPrev exec --no-startup-id playerctl previous
-bindsym XF86AudioIncreaseVolume exec --no-startup-id ponymix increase 5
-bindsym XF86AudioDecreaseVolume exec --no-startup-id ponymix decrease 5
+bindsym XF86AudioRaiseVolume exec --no-startup-id ponymix increase 5
+bindsym XF86AudioLowerVolume exec --no-startup-id ponymix decrease 5
 
 # Make the currently focused window a scratchpad
 bindsym $mod+Shift+s  exec --no-startup-id "xdpyinfo | grep focus | cut -d ' ' -f 4 | cut -d, -f 1 > ~/.stickidtmp"
